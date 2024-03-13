@@ -30,7 +30,9 @@ async function getEvents() {
     const data = await response.json();
     console.log(data.data);
     state.events = data.data;
-  } catch (error) {}
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 //------------------render from state----------
