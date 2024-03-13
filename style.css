@@ -1,0 +1,37 @@
+/* make the form have a little area  */
+form {
+  flex: 1 1 300px;
+  max-width: 600px;
+  background-color: #90979b;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* align-content: flex-end; */
+  /* justify-content: center; */
+}
+.namedesc {
+  min-width: 450px;
+}
+.locationinput {
+  min-width: 157px;
+}
+.dateinput {
+  min-width: 190px;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+}
+li {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+}

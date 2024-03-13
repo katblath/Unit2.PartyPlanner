@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Planning</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Here is a list of all the IDs on the page
+        * addEvent (form) 
+        * events (ul)-->
+
+    <!-- give it a heading -->
+    <h1>Check out all the events</h1>
+    <!-- create a form whereby they can create new events  -->
+    <form id="addEvent">
+      <!-- 1st label is for EVENT NAME -->
+      <label>
+        Event name
+        <input
+          class="namedesc"
+          type="text"
+          name="name"
+          placeholder="Creative Event Name"
+        />
+      </label>
+      <br />
+      <!-- 2nd label is for Description -->
+      <label>
+        Description
+        <input
+          class="namedesc"
+          type="text"
+          name="description"
+          placeholder="Birthday? Graduation?"
+        />
+      </label>
+      <br />
+      <!-- 3rd label is for DATE -->
+      <label>
+        Date
+        <input class="dateinput" type="date" name="date" />
+      </label>
+      <br />
+      <!-- 4th label is for Description -->
+      <label>
+        Location
+        <input
+          class="locationinput"
+          type="text"
+          name="location"
+          placeholder="123 Elm Street"
+        />
+      </label>
+      <br />
+      <br />
+      <button>Add Event</button>
+    </form>
+    <ul id="events"></ul>
+  </body>
+</html>
